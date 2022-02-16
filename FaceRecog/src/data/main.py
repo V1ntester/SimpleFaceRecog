@@ -29,7 +29,7 @@ def GetFaceDesc(frame, shapePredic, faceRecog, detector):
 
 def Main(persons):
 	#Capture video from camera
-	cap = cv.VideoCapture(0)
+	cap = cv.VideoCapture(0, cv2.CAP_DSHOW)
 
 	#Init variables
 	shapePredic = dlib.shape_predictor('../shape_predictor_68_face_landmarks.dat')
